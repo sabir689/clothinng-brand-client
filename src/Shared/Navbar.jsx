@@ -11,15 +11,21 @@ const Navbar = () => {
           .then()
           .catch();
   };
+
+console.log(user.photoURL);
+
+
   const NavLinks = (
     <>
       <li><NavLink to={"/"}>Home</NavLink></li>
       <li><NavLink to={"/addProduct"}>Add Product</NavLink></li>
       <li><NavLink to={"/myCart"}>My Cart</NavLink></li>
       <li><NavLink to={"/login"}>Login</NavLink></li>
+      
     
       
     </>
+
   );
   return (
     <div className="navbar  bg-base-100 border-2 border-gray-800 rounded-2xl shadow-2xl">
@@ -44,7 +50,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <p className="text-bold border lg:p-4   hover:bg-pink-800 rounded-full">{user?.email}</p>
-            <img src={user?.photo} alt="" />
+            <img src={user?.photoURL} alt="" />
             <div className="navbar-end">
                 {user ? (
                     <button onClick={handleSignOut} className="border-2 border-pink-800 hover:bg-gray-500 lg:p-4 rounded-2xl">Sign Out</button>

@@ -1,8 +1,6 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+➊My website is based on fashion design 
+➋there is 6 brands in website
+➌Each brand have 4 products but the levis brand is blank cause there is no product in there	
+➍You can add product based on your choice in the add product section	
+➎And user can sign in and sign out also..
+Live link:https://cloth-brands.web.app/

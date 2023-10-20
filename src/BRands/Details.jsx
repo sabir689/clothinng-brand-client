@@ -10,7 +10,7 @@ const Details = () => {
     event.preventDefault();
     const cartProduct = { img, name, brand, type, price, description };
 
-    fetch("http://localhost:5000/cart", {
+    fetch(" https://clothing-brand-server.vercel.app/cart", {
       method: "POST",
       headers: {
         "Content-Type": "application/json", 
