@@ -1,0 +1,41 @@
+{
+    "brands": [
+      {
+        "id": 1,
+        "brand_name": "Nike",
+        "brand_image1": "https://i.ibb.co/dMQCW07/Nike-Classic-Logo-Wallpaper-Pics.jpg",
+        "brand_description": "Nike is known for its innovative sportswear and athletic footwear. The brand promotes a dynamic and active lifestyle."
+      },
+      {
+        "id": 2,
+        "brand_name": "Adidas",
+        "brand_image1": "https://i.ibb.co/nQ1Whqt/Adidas-Logo.png",
+        "brand_description": "Adidas is a global leader in sportswear and athletic accessories. It represents a blend of performance and style."
+      },
+      {
+        "id": 3,
+        "brand_name": "Gucci",
+        "brand_image1": "https://i.ibb.co/GCsp8Z8/Gucci-logo-wallpapers-HD.jpg",
+        "brand_description": "Gucci is synonymous with luxury fashion and exquisite craftsmanship. It embodies sophistication and opulence."
+      },
+      {
+        "id": 4,
+        "brand_name": "Zara",
+        "brand_image1": "https://i.ibb.co/hH6VpPQ/zara.webp",
+        "brand_description": "Zara is a fast-fashion brand known for its trendy and affordable clothing. It exudes a sense of contemporary style."
+      },
+      {
+        "id": 5,
+        "brand_name": "H&M",
+        "brand_image1": "https://i.ibb.co/QQYrhGn/HM-symbol.jpg",
+        "brand_description": "H&M offers a wide range of fashionable apparel at accessible prices. It represents fashion for all."
+      },
+      {
+        "id": 6,
+        "brand_name": "Levi's",
+        "brand_image1": "https://i.ibb.co/Hz7sJKM/Levis-Emblema.jpg",
+        "brand_description": "Levi's is an iconic denim brand with a heritage of quality and ruggedness. It epitomizes classic American style."
+      }
+    ]
+  }
+  
