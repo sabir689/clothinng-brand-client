@@ -66,10 +66,10 @@ const Login = () => {
           </div>
           {loginError && <p className="text-red-500">{loginError}</p>}
           <div className="form-control mt-6 border-2 rounded-xl">
-            <button className="btn bg-gray-800">Login</button>
+            <button className="btn bg-red-800">Login</button>
           </div>
-          <div className="form-control mt-6 border-2 rounded-xl ">
-            <button onClick={signInWithGoogle} className="btn bg-gray-800 ">
+          <div className="form-control mt-6  border-2 rounded-xl ">
+            <button onClick={signInWithGoogle} className="btn bg-red-800 ">
               Sign In with Google
             </button>
           </div>
