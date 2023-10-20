@@ -12,7 +12,7 @@ const Navbar = () => {
           .catch();
   };
 
-console.log(user.photoURL);
+
 
 
   const NavLinks = (
