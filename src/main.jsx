@@ -23,6 +23,7 @@ import IndividualPages from './BRands/IndividualPages';
 import UpdateProduct from './BRands/UpdateProduct';
 import Details from './BRands/Details';
 import PrivateRoute from './Root/PrivateRoute';
+import ErrorPage from './Pages/ErrorPage';
 
 
 
@@ -30,6 +31,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",
