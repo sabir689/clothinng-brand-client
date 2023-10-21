@@ -17,7 +17,7 @@ const Login = () => {
     try {
       await signIn(email, password);
       console.log("Login successful");
-      setLoginError(null); // Clear any previous login errors
+      setLoginError(null);
       navigate(location?.state ? location.state.from : "/");
     } catch (error) {
       console.error(error);
@@ -32,55 +32,60 @@ const Login = () => {
     }
   };
 
+  const handleGoogleLogin = async () => {
+    try {
+      await signInWithGoogle();
+      console.log("Google Login successful");
+      setLoginError(null); 
+      navigate(location?.state ? location.state.from : "/"); 
+    } catch (error) {
+      console.error(error);
+    
+    }
+  };
+
   return (
     <div>
-      <div>
-        <h2 className="text-4xl lg:text-6xl border p-4 mx-4 text-center
-      lg:mx-80 rounded-xl bg-gray-800 text-white font-bold my-10">
-          Please Login
-        </h2>
-        <form onSubmit={handleLogin} className="md:w-3/4 lg:w-1/2 mx-auto">
-          <div className="form-control">
-            <label className="label">
-              Email
-            </label>
-            <input
-              type="email"
-              required
-              name="email"
-              placeholder="Email"
-              className="input input-bordered"
-            />
-          </div>
-          <div className="form-control">
-            <label className="label">
-              Password
-            </label>
-            <input
-              type="password"
-              required
-              name="password"
-              placeholder="Password"
-              className="input input-bordered"
-            />
-          </div>
-          {loginError && <p className="text-red-500">{loginError}</p>}
-          <div className="form-control mt-6 border-2 rounded-xl">
-            <button className="btn bg-red-800">Login</button>
-          </div>
-          <div className="form-control mt-6  border-2 rounded-xl ">
-            <button onClick={signInWithGoogle} className="btn bg-red-800 ">
-              Sign In with Google
-            </button>
-          </div>
-        </form>
-        <p className="text-center mt-4">
-          Do not have an account{" "}
-          <Link className="text-red-800 font-bold" to="/register">
-            Register
-          </Link>
-        </p>
-      </div>
+      <h2 className="text-4xl lg:text-6xl border p-4 mx-4 text-center lg:mx-80 rounded-xl bg-gray-800 text-white font-bold my-10">
+        Please Login
+      </h2>
+      <form onSubmit={handleLogin} className="md:w-3/4 lg:w-1/2 mx-auto">
+        <div className="form-control">
+          <label className="label">Email</label>
+          <input
+            type="email"
+            required
+            name="email"
+            placeholder="Email"
+            className="input input-bordered"
+          />
+        </div>
+        <div className="form-control">
+          <label className="label">Password</label>
+          <input
+            type="password"
+            required
+            name="password"
+            placeholder="Password"
+            className="input input-bordered"
+          />
+        </div>
+        {loginError && <p className="text-red-500">{loginError}</p>}
+        <div className="form-control mt-6 border-2 rounded-xl">
+          <button className="btn bg-red-800">Login</button>
+        </div>
+        <div className="form-control mt-6 border-2 rounded-xl">
+          <button onClick={handleGoogleLogin} className="btn bg-red-800">
+            Sign In with Google
+          </button>
+        </div>
+      </form>
+      <p className="text-center mt-4">
+        Do not have an account{" "}
+        <Link className="text-red-800 font-bold" to="/register">
+          Register
+        </Link>
+      </p>
     </div>
   );
 };

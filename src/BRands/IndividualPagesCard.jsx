@@ -6,7 +6,9 @@ const IndividualPagesCard = ({ product }) => {
     const { img, name, brand, _id, type, price, rating } = product;
 
     return (
+        
         <div className="card lg:w-96 sm:w-64  bg-gray-600  rounded-2xl shadow-xl m-4 p-4">
+           
             <img src={img} alt={name} className="card-image h-96" />
             <div className="card-body p-4">
                 <h2 className="card-title text-xl font-semibold">{name}</h2>

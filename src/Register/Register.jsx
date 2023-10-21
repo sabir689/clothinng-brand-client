@@ -2,6 +2,7 @@
 import  { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../FirebaseConfig/AuthProvider';
+import Swal from 'sweetalert2';
 
 
 const Register = () => {
@@ -29,7 +30,15 @@ const Register = () => {
     createUser(email, password)
       .then((result) => {
         console.log(result.user);
+        Swal.fire({
+          icon: 'success',
+          title: 'Registration Successful',
+          text: 'You have successfully registered.',
+        });
+        window.location.reload();
       })
+     
+      
       .catch((error) => {
         console.error(error);
       });
